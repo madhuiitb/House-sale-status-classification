@@ -24,7 +24,8 @@ Please refer Figures 1, 2, 3, 4, 5 for this.
     1. Random Forest Classifier
       *  Hyper parameter used - n estimators
       * Best hyper parameter - n estimators = 9
-      ![RFC](https://github.com/madhuiitb/Prediction-of-Residence-Sale-Status-with-Classification/blob/master/images/rfc3.jpeg)
+      * ![RFC](/images/rfc3.jpeg)
+      ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
     2. Support Vector Machines Classifier
     3. K-Nearest Neighbors Classifier
