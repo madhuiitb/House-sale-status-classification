@@ -24,7 +24,7 @@ Please refer Figures 1, 2, 3, 4, 5 for this.
     1. Random Forest Classifier
       *  Hyper parameter used - n estimators
       * Best hyper parameter - n estimators = 9
-      ![Figure 1: Hyper-Parameter Tuning vs Cross validation accuracy of Random Forest Classifier](/images/rfc3.jpeg)
+      ![RFC](https://github.com/madhuiitb/Prediction-of-Residence-Sale-Status-with-Classification/blob/master/images/rfc3.jpeg)
 
     2. Support Vector Machines Classifier
     3. K-Nearest Neighbors Classifier
