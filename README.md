@@ -21,18 +21,27 @@ it will take one part as test data in each iteration till it completes all its 9
 take mean of all these 9 parts then it will finalize the accuracy of that particular hyper-parameter.
 Please refer Figures 1, 2, 3, 4, 5 for this.
 
-    1. Random Forest Classifier
-      *  Hyper parameter used - n estimators
-      * Best hyper parameter - n estimators = 9
-      * ![RFC](/images/rfc3.jpeg)
-      ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-
-    2. Support Vector Machines Classifier
-    3. K-Nearest Neighbors Classifier
-    4. Stochastic Gradient Descent Classifier
-    5. Logistic Regression Classifier
+1. Random Forest Classifier
+    *  Hyper parameter used - n estimators
+    * Best hyper parameter - n estimators = 9
+    ![Figure 1: Hyper-Parameter Tuning vs Cross validation accuracy of RFC](/images/rfc3.jpeg)
+2. Support Vector Machines Classifier
+    * Hyper parameter used - C(Slack Variable)
+    * Best hyper parameter - C = 60
+    ![Figure 2: Hyper-Parameter Tuning vs Cross validation accuracy of SVM](/images/svm3.jpeg)
+3. K-Nearest Neighbors Classifier
+    * Hyper parameter used - n neighbors
+    * Best hyper parameter - n neighbors = 11
+    ![Figure 3: Hyper-Parameter Tuning vs Cross validation accuracy of KNN](/images/knn3.jpeg)
+4. Stochastic Gradient Descent Classifier
+    * Hyper parameter used - max iter
+    * Best hyper parameter - max iter = 835
+    ![Figure 4: Hyper-Parameter Tuning vs Cross validation accuracy of SGDC](/images/sgdc_1.jpeg)
+5. Logistic Regression Classifier
+    * Hyper parameter used - C(Slack Variable)
+    * Best hyper parameter - C = 9
+    ![Figure 5: Hyper-Parameter Tuning vs Cross validation accuracy of LRC](/images/figure_1.jpeg)
 ### 4. Conclusion
-
 ## Installation:
 #### * Python
 #### * Numpy
