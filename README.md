@@ -58,16 +58,3 @@ Implementation of residence sale status
 #### * Python
 #### * Numpy
 #### * Pandas
-#### * matplot
-
-Usage: The next section is usage, in which you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
-
-## Contributing: 
-    I have written entire code, in the train.py and test.py files for machine learning, simple classification
-    I have taken help of internet for usage of classifier libraries and functions usability
-
-## Credits: 
-    Have taken some insights to proceed with Data Preprocessing part from some of my friends
-    http://scikit-learn.org/ - was very helpful for easy implementation and understanding of scikit-learn
-    stats.stackexchange.com - for various scikit-learn's for more and easy classifiers implementation
-    pandas documentation - for csv files reading and to store the data in csvs's and it was very useful
