@@ -5,21 +5,33 @@ Implementation of residence sale status
 
 ## Table of Contents: 
 ### 1. Data Pre-Processing
+    * Identified the columns without real/integer data
+    * Then made a list of non real data columns to converting categorical data into real data for prices prediction
+    * After that have removed last 3 columns from the train data because we have to train without having sale status
+    * Have normalized the with this MinMaxScaler function to feature range=(-1, 1)
+    * Filled all NANs/NAs with 0 to avoid errors and to avoid noise data to get more accuracy
+    * After above step, there was significant change in training time and accuracy of RFC and SVM
 ### 2. Choice of Classifiers Used
-    1. Random Forest Classifier
-    2. Support Vector Machines Classifier
-    3. K-Nearest Neighbors Classifier
-    4. Stochastic Gradient Descent Classifier
-    5. Logistic Regression Classifier
+    * Used five classification models as mentioned below
+    * In which Random Forest and Support Vector Machines giving best results(Best Cross Validation Score/Accuracy)
+    * But took largest training time when executed the algorithm / program
+    
+    
+        1. Random Forest Classifier
+        2. Support Vector Machines Classifier
+        3. K-Nearest Neighbors Classifier
+        4. Stochastic Gradient Descent Classifier
+        5. Logistic Regression Classifier
 ### 3. Hyper Parameters and Graphs
-I have used different hyper-parameters for each and every classifier out of the five methods that were
-implemented, each model had it's own set of hyper-parameters. Change of one hyper-parameter for each
-and every classifier, along with Cross Validation and Kfold(k=9) was done, and these chosen parameters
-were updated to increase the cross validation accuracy. I have used cross validation technique which has
-9 fold split data technique, which will divide the data into 9 parts and it will iterate 9 times each time
-it will take one part as test data in each iteration till it completes all its 9 parts and for accuracy it will
-take mean of all these 9 parts then it will finalize the accuracy of that particular hyper-parameter.
-Please refer Figures 1, 2, 3, 4, 5 for this.
+    * Used different hyper-parameters for each and every classifier
+    * Each model had it's own set of hyper-parameters
+    * Change of one hyper-parameter for each and every classifier, along with Cross Validation and Kfold(k=9)
+    * I have used cross validation technique which has 9 fold split data technique
+    * Which will divide the data into 9 parts and it will iterate 9 times
+    * Each time it will take one part as test data in each iteration till it completes all its 9 parts
+    * For accuracy it will take mean of all these 9 parts
+    * And then it will finalize the accuracy of that particular hyper-parameter
+    * Please refer below figures for full understanding of the problem
 
 1. Random Forest Classifier
     *  Hyper parameter used - n estimators
@@ -41,7 +53,7 @@ Please refer Figures 1, 2, 3, 4, 5 for this.
     * Hyper parameter used - C(Slack Variable)
     * Best hyper parameter - C = 9
     ![Figure 5: Hyper-Parameter Tuning vs Cross validation accuracy of LRC](/images/figure_1.jpeg)
-### 4. Conclusion
+    
 ## Installation:
 #### * Python
 #### * Numpy
@@ -50,8 +62,12 @@ Please refer Figures 1, 2, 3, 4, 5 for this.
 
 Usage: The next section is usage, in which you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
 
-Contributing: Larger projects often have sections on contributing to their project, in which contribution instructions are outlined. Sometimes, this is a separate file. If you have specific contribution preferences, explain them so that other developers know how to best contribute to your work. To learn more about how to help others contribute, check out the guide for setting guidelines for repository contributors.
+## Contributing: 
+    I have written entire code, in the train.py and test.py files for machine learning, simple classification
+    I have taken help of internet for usage of classifier libraries and functions usability
 
-Credits: Include a section for credits in order to highlight and link to the authors of your project.
-
-License: Finally, include a section for the license of your project. For more information on choosing a license, check out GitHub’s licensing guide!
+## Credits: 
+    Have taken some insights to proceed with Data Preprocessing part from some of my friends
+    http://scikit-learn.org/ - was very helpful for easy implementation and understanding of scikit-learn
+    stats.stackexchange.com - for various scikit-learn's for more and easy classifiers implementation
+    pandas documentation - for csv files reading and to store the data in csvs's and it was very useful
